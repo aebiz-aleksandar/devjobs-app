@@ -305,7 +305,7 @@
 
     //Event: Document Loaded
     document.addEventListener('DOMContentLoaded', () => {
-        if (location.pathname === '/devjobs-app/') {
+        if (location.pathname === '/') {
             //get data and fill job list
             getData().then(data => {
                 allDataArr = data;
@@ -340,7 +340,7 @@
 
             //Event: Set Job Period
             jobPeriodCheck.addEventListener('click', setJobPeriod);
-        } else if (location.pathname === '/devjobs-app/job-page.html') {
+        } else if (location.pathname === '/job-page.html') {
             const pageUrl = location.href.split('?')[1];
             const jobId = pageUrl.slice(pageUrl.indexOf('=') + 1);
             //get data and fill job details
