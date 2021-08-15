@@ -1,0 +1,96 @@
+    <!DOCTYPE html>
+    <html lang="en" class="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fontawesome.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <!-- Style.css -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Devjobs APP</title>
+    </head>
+    <body>
+
+        <!-- Main Header -->
+        <header class="main-header">
+            <!-- Topbar -->
+            <div class="top-bar">
+                <!-- Container -->
+                <div class="container">
+                    <h1 class="main-title">
+                        <a href="https://coja-proba.netlify.app/">
+                            <img src="img/logo.svg" alt="logo"></h1>
+                        </a>
+                    <div class="team-switch">
+                        <img src="img/icon-sun.svg" alt="">
+                        <div class="switch">
+                            <input type="checkbox" id="switch-input">
+                            <span class="slider"></span>
+                        </div>
+                        <img src="img/icon-moon.svg" alt="">
+                    </div>
+                </div>
+                <!-- Container END -->
+            </div>
+            <!-- Topbar END -->
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <!-- Container -->
+                <div class="container">
+                    <div class="search-items">
+                        <div class="search-item-one search-item-title">
+                            <input type="text" class="form-control" id="title-input" placeholder="Filter by title...">
+                            <img src="img/icon-search.svg" alt="" class="icon-search hide-for-mobile">
+                            <img src="img/icon-filter.svg" alt="" class="icon-filter hide-for-desktop">
+                            <button type="button" class="btn btn-search-small hide-for-desktop">
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M17.112 15.059h-1.088l-.377-.377a8.814 8.814 0 002.15-5.784A8.898 8.898 0 008.898 0 8.898 8.898 0 000 8.898a8.898 8.898 0 008.898 8.899c2.211 0 4.23-.808 5.784-2.143l.377.377v1.081l6.845 6.832 2.04-2.04-6.832-6.845zm-8.214 0A6.16 6.16 0 118.9 2.737a6.16 6.16 0 010 12.322z" fill="#ffffff" fill-rule="nonzero"/></svg>
+                            </button>
+                        </div>
+                        <div class="search-item-two hide">
+                            <div class="search-item-two-content">
+                                <div class="search-item-location">
+                                    <input type="text" class="form-control" id="location-input" placeholder="Filtet by location...">
+                                    <img src="img/icon-location.svg" alt="" class="icon-location">
+                                </div>
+                                <div class="search-item-period">
+                                    <div>
+                                        <div class="job-period-check">
+                                            <svg width="15" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M1 6.57l3.572 3.572L13.714 1" stroke="#FFF" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                                        </div>
+                                        <span>Full time</span>
+                                    </div>
+                                    <button type="button" class="btn btn-search-large">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Container END -->
+            </div>
+            <!-- Search Bar END -->
+        </header>
+        <!-- Main Header END -->
+
+        <main class="main-main">
+            <!-- Section Jobs -->
+            <section class="section-jobs">
+                <!-- Container -->
+                <div class="container">
+                    <div class="jobs-holder">
+                        
+                    </div>
+                    <div class="footer-holder">
+                        <button id="btn-more-less" class="btn btn-more">Show More</button>
+                    </div>
+                </div>
+                <!-- Container END -->
+            </section>
+            <!-- Section Jobs END -->
+        </main>
+        
+
+        <!-- Main.js -->
+        <script src="js/main.js"></script>
+    </body>
+    </html>
